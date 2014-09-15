@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script charset="utf-8" src="/javascripts/kindEditor/kindeditor-min.js"></script>
+    <script charset="utf-8" src="/javascripts/kindEditor/lang/zh_CN.js"></script>
+    <script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+				});
+			});
+		</script>
+  </head>
+  <header>
+  <h1><%=title%></h1>
+  </header>
+<nav>
+
+ <span><a title="主页" href="/">微博主页</a></span>
+<span><a title="存档" href="/archive">存档中心</a></span>
+<span><a title="标签" href="/tags">标签管理</a></span>
+<span><a title="友情链接" href="/links">友情链接</a></span>
+
+<%if(user){%>
+<span><a title="发表" href="/post">发表博文</a></span>
+<span><a title="上传" href="/upload">上传文件</a></span>
+<span><a title="登出" href="/logout">退出微博</a></span>
+<%}else{%>
+  <span><a title="登陆" href="/login">微博登陆</a></span>
+  <span><a title="注册" href="/reg">微博注册</a></span>
+<%}%>
+
+<span><form action="/search" method="GET" ><input type="text" name="keyword" placeholder="SEARCH " class="search" /></form></span>
+ 
+</nav>
+<div>
+<article>
+<%if(success){%>
+<div><%=success%></div>
+<%}%>
+
+<%if(error){%>
+<div><%=error%></div>
+<%}%>

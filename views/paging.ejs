@@ -1,0 +1,12 @@
+﻿<hr/>
+<div id="bar_page">
+<% if(!isFirstPage){%>
+<span class="prepage"><a title="上一页" href="?p=<%=page-1%>">上一页</a></span>
+<%}%>
+<span class="prepage"><a href="#">当前页面<%=page%>页</a></span>
+
+<% if(!isLastPage){%>
+<span class="nextpage"><a title="下一页" href="?p=<%=page+1%>">下一页</a></span>
+<%}%>
+
+</div>

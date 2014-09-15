@@ -1,0 +1,45 @@
+
+*{ padding:0; margin:0px;}
+a {
+  color:#036; text-decoration:none; font-family:Arial, Helvetica, sans-serif;
+  font-weight:600;
+}
+body{width:600px;margin:2em auto; padding:0 2em; font-size:14px; font-family:
+"MS Serif", "New York", serif;}
+p{line-height:24px; margin:1em 0;}
+
+header{padding:.5em 0px; border-bottom:1px solid #cccccc;}
+
+nav{position:fixed;left:12em; font-family:"MS Serif", "New York", serif; font-size:1.1em;width:8em;text-align:center;}
+nav a{ display:block; text-decoration:none; padding:.7em 1em; color:#060;}
+nav a:hover{ background-color:#069;color:#f9f9f9;-webkit-transition:color .2s linear;}
+
+article{ font-size:16px; padding-top:.5em;}
+article a{color:#066;text-decoration:none;}
+article a:hover{color:#333333;text-decoration:underline;}
+.info{font-size:14px;}
+
+input{ width:240px; height:28px; 
+ border:1px #006633 solid; border-radius:5px 5px 5px 5px}
+input#submit{ width:120px; height:28px; 
+ border:1px #006633 solid; background-color:#060; border-radius:5px 5px 5px 5px}
+ 
+textarea{border-radius:5px 5px 5px 5px;} 
+.edit{margin:3px;padding:5px 10px;border-radius:3px;background-color:#06F;color:#333;font-size:16px;}
+.edit:hover{text-decoration:none; background-color:#F00;color:#fff;-webkit-transition:color .2s linear;}
+.bar_page{ height:26px;width:600px;}
+.prepage a{ float:left;text-decoration:none;padding:1em 1em; color:#036;font-weight:400;}
+.nextpage a{ float:right;text-decoration:none;padding:1em 1em; color:#036;font-weight:400;}
+.prepage a:hover,.nextpage a:hover{text-decoration:none;background-color:#036;color:#f9f9f9;-webkit-transition:color .2s linear;}
+
+.archive{list-style:none;line-height:28px;}
+.archive h3{margin:0.5em  0;}
+.archive time{float:left;font-size:14px;color:#999999;margin-right:1.2em;}
+
+.tag{ background-color:#ff0000;border-radius:8px;font-size:14px;color:#ffffff;display:inline-block;padding:0px 5px;margin-bottom:8px;}
+.tag:hover{ text-decoration:none;background-color:#ffffff;color:#000000;-webkit-transition:color .2s linear;}
+#tag1, #tag2,#tag3{width:60px; background-color:#CCC; border-radius:3px 3px;}
+.bar{ background-color:#ededed; border-radius:8px 8px; padding-left:30px; box-shadow:0px 0px 1px;}
+.search{border:0px;width:6em;text-align:center;font-size:1em;margin:0.5em 0;}
+.l_head{float:left;margin-left:-4.2em;box-shadow:1px 1px 4px #888;}
+.r_head{float:right;margin-right:0.5em;box-shadow:1px 1px 4px #888;}
